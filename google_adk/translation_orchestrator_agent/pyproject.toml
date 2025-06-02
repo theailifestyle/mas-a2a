@@ -11,6 +11,7 @@ dependencies = [
     "httpx>=0.28.1",
     "google-genai>=1.9.0", # For the orchestrator's own LLM
     "google-adk>=1.0.0",
+    "httpx",
     "pydantic>=2.11.4",
     "python-dotenv>=1.1.0",
     "uvicorn>=0.34.2"
@@ -20,9 +21,6 @@ dependencies = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-
-[tool.uv.sources]
-a2a-sdk = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]

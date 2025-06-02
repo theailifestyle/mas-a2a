@@ -19,9 +19,6 @@ dependencies = [
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 
-[tool.uv.sources]
-a2a-sdk = { workspace = true }
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
