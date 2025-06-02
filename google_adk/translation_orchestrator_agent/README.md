@@ -41,6 +41,7 @@ You can test this system by creating a CLI client that sends messages to the orc
 
 Example CLI interaction:
 ```
+source .venv/bin/activate
 # Assuming a cli_client.py is adapted for the orchestrator
 python cli_client.py --query "Translate 'Good morning' to French" --agent_url http://localhost:10012
 ```
